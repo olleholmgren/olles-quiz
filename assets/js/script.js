@@ -1,1 +1,5 @@
-console.log("Hi from Olles Quiz");
+function startGame() {
+    alert("Welcome to this quiz")
+}
+
+startGame()
