@@ -1,8 +1,12 @@
 body {
     background-color: gainsboro;
+    font-family: 'Varela Round', sans-serif;
+    
 }
 
-#quiz-div {
+.quiz-div {
+    text-align: center;
+    box-sizing: border-box;
 
 }
 
