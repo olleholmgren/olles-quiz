@@ -7,15 +7,15 @@ startPage()
 /**
  * Questions for the quiz
  */
-city-question = [{
-    city: 0,
+let cityQuestion = [{
+    id: 0,
 q: "Madrid",
 a: [{ text: "Belgium", isCorrect: false },
     { text: "Sweden", isCorrect: false },
     { text: "Spain", isCorrect: true },
     { text: "Greece", isCorrect: false }
 ]
-    city: 1,
+    id: 1,
 q: "Sofia"
 a: [{ text: "Bulgaria", isCorrect: true },
     { text: "Bosnia and Herzegovina", isCorrect: false },
@@ -30,19 +30,27 @@ let city = "";
 /**
  * Game loop 
  */
-function startQuiz(city-question) {
+function startQuiz(cityQuestion) {
     /** Question */
-    let question = document.getElementById("city-question");
-    city-question.innerText = city-question["city"].q;
+    let question = document.getElementById("cityQuestion");
+    cityQuestion.innerText = cityQuestion[id].q;
     /** Answer alternatives */
     let answer1 = document.getElementById("answer1")
     let answer2 = document.getElementById("answer2")
     let answer3 = document.getElementById("answer3")
     let answer4 = document.getElementById("answer4")
     /** Answer alternatives text */
-    answer1.innerText = city-question["city"].a[0].text;
-
+    answer1.innerText = cityQuestion[id].a[0].text;
+    answer2.innerText = cityQuestion[id].a[1].text;
+    answer3.innerText = cityQuestion[id].a[2].text;
+    answer4.innerText = cityQuestion[id].a[3].text;
+    /**  */
         
 }
 
-startQuiz()
+const play = true;
+
+if (play) {
+    startQuiz()
+}
+startQuiz(question)
