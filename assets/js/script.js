@@ -66,6 +66,7 @@ function playerAnswer(number) {
         score = score + 1;
         questionNumber = questionNumber + 1;
         console.log(score, questionNumber)
+        
         Quiz()
     } else {
         // Wrong answer will go to next question without increasing score
