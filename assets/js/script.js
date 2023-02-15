@@ -7,22 +7,19 @@ startPage()
 /**
  * Questions for the quiz
  */
-let cityQuestion = [{
-    id: 0,
-q: "Madrid",
-a: [{ text: "Belgium", isCorrect: false },
-    { text: "Sweden", isCorrect: false },
-    { text: "Spain", isCorrect: true },
-    { text: "Greece", isCorrect: false }
-]
-    id: 1,
-q: "Sofia"
-a: [{ text: "Bulgaria", isCorrect: true },
-    { text: "Bosnia and Herzegovina", isCorrect: false },
-    { text: "Germany", isCorrect: false },
-    { text: "Iceland", isCorrect: false }
-]
-}
+let cityQuestion = [
+    {
+        id: 0,
+        q: "Madrid",
+        a: ["Belgium", "Sweden", "Spain", "Greece"],
+        correct: 2
+    },
+    {
+        id: 1,
+        q: "Sofia",
+        a: ["Bulgaria", "BosniaandHerzegovina", "Germany", "Iceland"],
+        correct: 0
+    },
 ]
 
 let city = "";
