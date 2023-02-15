@@ -34,7 +34,11 @@ let score = 0;
  */
 let cityQuestionArea = document.getElementById("cityQuestion");
 cityQuestionArea.innerText = cityQuestion[questionNumber].q;
-
+/** Answer alternatives */
+let answer1 = document.getElementById("answer1")
+let answer2 = document.getElementById("answer2")
+let answer3 = document.getElementById("answer3")
+let answer4 = document.getElementById("answer4")
 
 
 /**
@@ -42,11 +46,6 @@ cityQuestionArea.innerText = cityQuestion[questionNumber].q;
  */
 function Quiz() {
 
-    /** Answer alternatives */
-    let answer1 = document.getElementById("answer1")
-    let answer2 = document.getElementById("answer2")
-    let answer3 = document.getElementById("answer3")
-    let answer4 = document.getElementById("answer4")
     /** Answer alternatives text */
     answer1.innerText = cityQuestion[id].a[0].text;
     answer2.innerText = cityQuestion[id].a[1].text;
@@ -54,6 +53,15 @@ function Quiz() {
     answer4.innerText = cityQuestion[id].a[3].text;
     /**  */
         
+}
+
+function playerAnswer() {
+    if (number === cityQuestion[questionNumber].correct) {
+        score = score + 1;
+        questionNumber = questionNumber + 1;
+        console.log(score, questionNumber)
+    }
+
 }
 
 const play = true;
