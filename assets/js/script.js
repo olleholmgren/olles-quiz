@@ -17,20 +17,31 @@ let cityQuestion = [
     {
         id: 1,
         q: "Sofia",
-        a: ["Bulgaria", "BosniaandHerzegovina", "Germany", "Iceland"],
+        a: ["Bulgaria", "Bosnia and Herzegovina", "Germany", "Iceland"],
         correct: 0
     },
 ]
 
+/**
+ * Game variables
+ */
 let city = "";
+let questionNumber = 0;
+let score = 0;
+
+/**
+ * Question and Answer Area
+ */
+let cityQuestionArea = document.getElementById("cityQuestion");
+cityQuestionArea.innerText = cityQuestion[questionNumber].q;
+
+
 
 /**
  * Game loop 
  */
-function startQuiz(cityQuestion) {
-    /** Question */
-    let question = document.getElementById("cityQuestion");
-    cityQuestion.innerText = cityQuestion[id].q;
+function Quiz() {
+
     /** Answer alternatives */
     let answer1 = document.getElementById("answer1")
     let answer2 = document.getElementById("answer2")
@@ -48,6 +59,5 @@ function startQuiz(cityQuestion) {
 const play = true;
 
 if (play) {
-    startQuiz()
+    Quiz()
 }
-startQuiz(question)
