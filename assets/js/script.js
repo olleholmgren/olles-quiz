@@ -34,7 +34,7 @@ let number = 0;
  * Question and Answer Area
  */
 let cityQuestionArea = document.getElementById("cityQuestion");
-cityQuestionArea.innerText = cityQuestion[questionNumber].q;
+
 /** Answer alternatives */
 let answer1 = document.getElementById("answer1")
 let answer2 = document.getElementById("answer2")
@@ -47,6 +47,7 @@ let answer4 = document.getElementById("answer4")
  */
 function Quiz() {
 
+    cityQuestionArea.innerText = cityQuestion[questionNumber].q;
     /** Answer alternatives text */
     answer1.innerText = cityQuestion[questionNumber].a[0];
     answer2.innerText = cityQuestion[questionNumber].a[1];
