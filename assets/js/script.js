@@ -28,6 +28,7 @@ let cityQuestion = [
 let city = "";
 let questionNumber = 0;
 let score = 0;
+let number = 0;
 
 /**
  * Question and Answer Area
@@ -47,15 +48,15 @@ let answer4 = document.getElementById("answer4")
 function Quiz() {
 
     /** Answer alternatives text */
-    answer1.innerText = cityQuestion[id].a[0].text;
-    answer2.innerText = cityQuestion[id].a[1].text;
-    answer3.innerText = cityQuestion[id].a[2].text;
-    answer4.innerText = cityQuestion[id].a[3].text;
+    answer1.innerText = cityQuestion[questionNumber].a[0];
+    answer2.innerText = cityQuestion[questionNumber].a[1];
+    answer3.innerText = cityQuestion[questionNumber].a[2];
+    answer4.innerText = cityQuestion[questionNumber].a[3];
     /**  */
         
 }
 
-function playerAnswer() {
+function playerAnswer(number) {
     if (number === cityQuestion[questionNumber].correct) {
         score = score + 1;
         questionNumber = questionNumber + 1;
