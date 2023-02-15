@@ -43,7 +43,7 @@ let answer4 = document.getElementById("answer4")
 
 
 /**
- * Game loop 
+ * Quiz loop 
  */
 function Quiz() {
 
@@ -56,11 +56,20 @@ function Quiz() {
         
 }
 
+/**
+ * Answer and score loop
+ */
 function playerAnswer(number) {
     if (number === cityQuestion[questionNumber].correct) {
+        // Correct answer will increase score and go to next question
         score = score + 1;
         questionNumber = questionNumber + 1;
         console.log(score, questionNumber)
+        Quiz()
+    } else {
+        // Wrong answer will go to next question without increasing score
+        questionNumber = questionNumber + 1;
+        Quiz()
     }
 
 }
