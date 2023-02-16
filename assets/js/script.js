@@ -20,6 +20,22 @@ let cityQuestion = [
         a: ["Bulgaria", "Bosnia and Herzegovina", "Germany", "Iceland"],
         correct: 0
     },
+    {
+        id: 2,
+        q: "Copenhagen",
+        a: ["Italy", "Ukraine", "Denmark", "Croatia"],
+        correct:  2
+    },
+    {   id: 3,
+        q: "",
+        a: ["", "", "", "", ""],
+        correct: 0
+    },
+    {   id: 4,
+        q: "",
+        a: ["", "", "", "", ""],
+        correct: 0
+    },
 ]
 
 /**
@@ -46,7 +62,7 @@ let answer4 = document.getElementById("answer4")
  * Quiz loop 
  */
 function Quiz() {
-
+    console.log("Score: ", score)
     cityQuestionArea.innerText = cityQuestion[questionNumber].q;
     /** Answer alternatives text */
     answer1.innerText = cityQuestion[questionNumber].a[0];
@@ -64,8 +80,10 @@ function playerAnswer(number) {
     if (number === cityQuestion[questionNumber].correct) {
         // Correct answer will increase score and go to next question
         score = score + 1;
+        score = parseInt(document.getElementById("liveScore").innerText);
+        document.getElementById("liveScore").innerText= ++score;
         questionNumber = questionNumber + 1;
-        console.log(score, questionNumber)
+        
         
         Quiz()
     } else {
