@@ -27,15 +27,19 @@ let cityQuestion = [
         correct:  2
     },
     {   id: 3,
-        q: "",
-        a: ["", "", "", "", ""],
-        correct: 0
+        q: "Vienna",
+        a: ["Poland", "Netherlands", "Switzerland", "Austria"],
+        correct: 3
     },
     {   id: 4,
-        q: "",
-        a: ["", "", "", "", ""],
-        correct: 0
+        q: "Amsterdam",
+        a: ["Wales", "Belgium", "Portugal", "Netherlands"],
+        correct: 3
     },
+    {
+        id: 5,
+        q: "Game Over",
+    }
 ]
 
 /**
@@ -93,6 +97,12 @@ function playerAnswer(number) {
     }
 
 }
+
+/**
+ * End of game
+ */
+
+
 
 const play = true;
 
