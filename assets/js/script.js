@@ -99,16 +99,19 @@ function playerAnswer(number) {
 
 function finishQuiz() {
     quizDiv.style.visibility = "hidden";
-    console.log("You have finished the quiz, go again?");
     finishText.innerText = "You have finished the Quiz. Your score is. Go again?";
+    goAgain.style.visibility = "visible"
 }
 
 function refreshPage() {
     city = "";
     questionNumber = 0;
     score = 0;
+    number = 0;
     play = true;
     numberOfQuestions = 0;
+    quizDiv.style.visibility = "visible"
+    goAgain.style.visibility = "hidden"
     scoreElement.innerText = score;
     organiseGame();
 }
@@ -117,6 +120,6 @@ function organiseGame() {
     if (play) {
     numberOfQuestions = cityQuestion.length
     Quiz()
-}
+ }
 }
 organiseGame();
