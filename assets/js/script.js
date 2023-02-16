@@ -1,8 +1,17 @@
-function startPage() {
-    alert("Welcome to this quiz")
-}
-startPage()
+/**
+ * Game variables
+ */
+let city = "";
+let questionNumber = 0;
+let score = 0;
+let number = 0;
+let play = true;
+let numberOfQuestions = 0;
+let highScore = 0;
 
+function startQuiz() {
+
+}
 
 /**
  * Questions for the quiz
@@ -36,19 +45,8 @@ let cityQuestion = [
         a: ["Wales", "Belgium", "Portugal", "Netherlands"],
         correct: 3
     },
-    {
-        id: 5,
-        q: "Game Over",
-    }
 ]
 
-/**
- * Game variables
- */
-let city = "";
-let questionNumber = 0;
-let score = 0;
-let number = 0;
 
 /**
  * Question and Answer Area
@@ -98,14 +96,14 @@ function playerAnswer(number) {
 
 }
 
-/**
- * End of game
- */
+function finishQuiz() {
 
+}
 
-
-const play = true;
-
-if (play) {
+function organiseGame() {
+    if (play) {
+    numberOfQuestions = cityQuestion.length
     Quiz()
 }
+}
+organiseGame();
