@@ -11,6 +11,7 @@ let highScore = 0;
 
 const quizDiv = document.querySelector(".quizDiv")
 const goAgain = document.querySelector(".goAgain")
+
 const scoreElement = document.getElementById("liveScore") 
 const finishText = document.getElementById("finishText")
 
@@ -98,8 +99,8 @@ function playerAnswer(number) {
 
 function finishQuiz() {
     quizDiv.style.visibility = "hidden";
-    console.log("You have finished the quiz, go again?")
-    
+    console.log("You have finished the quiz, go again?");
+    finishText.innerText = "You have finished the Quiz. Your score is. Go again?";
 }
 
 function refreshPage() {
