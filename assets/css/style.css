@@ -4,9 +4,19 @@ body {
     
 }
 
+.intro {
+    text-align: center;
+    box-sizing: border-box;
+}
+
 .quizDiv {
     text-align: center;
     box-sizing: border-box;
     visibility: hidden;
 }
 
+.goAgain {
+    text-align: center;
+    box-sizing: border-box;
+    visibility: hidden;
+}
