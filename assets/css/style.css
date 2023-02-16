@@ -7,6 +7,6 @@ body {
 .quizDiv {
     text-align: center;
     box-sizing: border-box;
-
+    visibility: hidden;
 }
 

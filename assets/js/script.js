@@ -11,12 +11,14 @@ let highScore = 0;
 
 const quizDiv = document.querySelector(".quizDiv")
 const goAgain = document.querySelector(".goAgain")
+const wipeArea = document.querySelector(".intro")
 
 const scoreElement = document.getElementById("liveScore") 
 const finishText = document.getElementById("finishText")
 
 function startQuiz() {
     quizDiv.style.visibility = "visible";
+    wipeArea.style.visibility = "hidden";
 }
 
 /**
