@@ -124,7 +124,7 @@ function playerAnswer(number) {
 
 function finishQuiz() {
     quizDiv.style.visibility = "hidden";
-    finishText.innerText = "You have finished the Quiz. Your score is. Go again?";
+    finishText.innerText = `You have finished the Quiz. Your score is ${score}. Go again?`;
     goAgain.style.visibility = "visible"
 }
 
