@@ -123,8 +123,11 @@ function playerAnswer(number) {
 }
 
 function finishQuiz() {
+    if (highScore < score) {
+        highScore = score;
+    }
     quizDiv.style.visibility = "hidden";
-    finishText.innerText = `You have finished the Quiz. Your score is ${score}. Go again?`;
+    finishText.innerText = `You have finished the Quiz. Your score is ${score} out of ${numberOfQuestions}. Your high score is ${highScore}. Go again?`;
     goAgain.style.visibility = "visible"
 }
 
