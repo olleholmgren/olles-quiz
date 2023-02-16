@@ -51,6 +51,31 @@ let cityQuestion = [
         a: ["Wales", "Belgium", "Portugal", "Netherlands"],
         correct: 3
     },
+    {   id: 5,
+        q: "Stockholm",
+        a: ["Wales", "Sweden", "Portugal", "Netherlands"],
+        correct: 1
+    },
+    {   id: 6,
+        q: "Berlin",
+        a: ["Germany", "Belgium", "Portugal", "Netherlands"],
+        correct: 0
+    },
+    {   id: 7,
+        q: "Minsk",
+        a: ["Wales", "Belgium", "Portugal", "Belarus"],
+        correct: 3
+    },
+    {   id: 8,
+        q: "Athens",
+        a: ["Wales", "Belgium", "Greece", "Netherlands"],
+        correct: 2
+    },
+    {   id: 9,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
 ]
 
 
