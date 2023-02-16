@@ -10,7 +10,7 @@ let numberOfQuestions = 0;
 let highScore = 0;
 
 const scoreElement = document.getElementById("liveScore") 
-
+const finishText = document.getElementById("finishText")
 
 function startQuiz() {
 
@@ -83,20 +83,30 @@ function Quiz() {
  */
 function playerAnswer(number) {
     if (number === cityQuestion[questionNumber].correct) {
-        // Correct answer will increase score and go to next question
         score = score + 1;
         scoreElement.innerText = score;
-        Quiz()
+    }
+    if (questionNumber === (numberOfQuestions - 1)) {
+        finishQuiz();
     } else {
-        // Wrong answer will go to next question without increasing score
         questionNumber = questionNumber + 1;
         Quiz()
     }
-
 }
 
 function finishQuiz() {
+    console.log("You have finished the quiz, go again?")
 
+}
+
+function refreshPage() {
+    city = "";
+    questionNumber = 0;
+    score = 0;
+    play = true;
+    numberOfQuestions = 0;
+    scoreElement.innerText = score;
+    organiseGame();
 }
 
 function organiseGame() {
