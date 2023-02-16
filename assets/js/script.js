@@ -9,6 +9,9 @@ let play = true;
 let numberOfQuestions = 0;
 let highScore = 0;
 
+const scoreElement = document.getElementById("liveScore") 
+
+
 function startQuiz() {
 
 }
@@ -51,13 +54,13 @@ let cityQuestion = [
 /**
  * Question and Answer Area
  */
-let cityQuestionArea = document.getElementById("cityQuestion");
+const cityQuestionArea = document.getElementById("cityQuestion");
 
 /** Answer alternatives */
-let answer1 = document.getElementById("answer1")
-let answer2 = document.getElementById("answer2")
-let answer3 = document.getElementById("answer3")
-let answer4 = document.getElementById("answer4")
+const answer1 = document.getElementById("answer1")
+const answer2 = document.getElementById("answer2")
+const answer3 = document.getElementById("answer3")
+const answer4 = document.getElementById("answer4")
 
 
 /**
@@ -82,11 +85,7 @@ function playerAnswer(number) {
     if (number === cityQuestion[questionNumber].correct) {
         // Correct answer will increase score and go to next question
         score = score + 1;
-        score = parseInt(document.getElementById("liveScore").innerText);
-        document.getElementById("liveScore").innerText= ++score;
-        questionNumber = questionNumber + 1;
-        
-        
+        scoreElement.innerText = score;
         Quiz()
     } else {
         // Wrong answer will go to next question without increasing score
