@@ -1,7 +1,7 @@
 
 
-
 # European Capitals Quiz
+
 
 A simple, neat and challenging quiz game about capitals in European countries.
 
@@ -25,6 +25,12 @@ There will always be only one simple and easy path for the player to go:
 
 - Start over
 
+In my own opinion, there will always be people interested in geography and quizzes - so i have combined these two
+into a 100% functioning game with score counting. It can be used by the player for pure enjoyment but also a good way 
+for a person to learn European capitals by heart.
+
+The main inspiration for doing this quiz is - of course - my own interest in geography.
+
 ## Intro page
 
 At the first page, player is welcomed to play the quiz and information about score counting is provided before starting the game. Everything is visible at first glance and very clear
@@ -46,9 +52,15 @@ After the last question, the player will be notified at a blank page that the qu
 The total score will be presented as well as high score and an option to try the quiz all over again.
 If the player makes another try round and get better result - the high score will be updated with the highest score for the session.
 
+In this way, the player is encouraged to challenge either themselves or with other friends. To see who can get the highest score.
+
+![finish-msg-image](/assets/images/Finish-message.png)
+
 ## Testing
 
-The quiz is 100% responsive and is fully playable on any device whether it is a smart phone, tablet or a desktop computer
+The quiz is 100% responsive and is fully playable on any device whether it is a smart phone, tablet or a desktop computer.
+
+Testing of the responsiveness has been done by opening the Google Dev Tools 'inspect' function in the Chrome browser, and then dragged the side list in order to see that it is responsive in all preferred screen sizes.
 
 ### JavaScript
 
@@ -71,20 +83,27 @@ No errors
 
 ## Deployment
 
-In the end, I deployed my webpage to GitHub.com.
+In the end, I deployed my quiz game page to GitHub.com.
 - First, I made sure that I have made all my 'git add .' and 'git commit -s'.
 - Then I went over to my repository in GitHub, navigated to 'Settings' -> 'Pages'.
 - In 'Pages', under the 'Source' section I deployed my page from the 'main branch'.
 
 
+## Conclusion
+
+With this milestone 2nd project I have gotten a broader picture about the interactive possibilities with
+JavaScript. Also gave me the wider experience on how to manipulate the HTML document. How to use functions and if statements/conditions.
+
+The number one guidance through this milestone has been received from my excellent mentor Spencer Barriball
+at Code Institute who was my biggest help when times got rough. 
+Apart from that, most of the knowledge I have gotten through the Love Maths walkthrough from Code Institute.
+
+For future use, I can develop this quiz game and make all different sorts of improvements. Even be able to make it as 
+a fun learning tool for my own children.
 
 
 
 
 
 
-
-![buttons-image](/assets/images/buttons.png)
-
-![finish-msg-image](/assets/images/Finish-message.png)
 
