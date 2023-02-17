@@ -22,11 +22,6 @@ const wipeArea = document.querySelector(".intro")
 const scoreElement = document.getElementById("liveScore") 
 const finishText = document.getElementById("finishText")
 
-
-
-
-
-
 function startQuiz() {
     quizDiv.style.visibility = "visible";
     wipeArea.style.visibility = "hidden";
@@ -174,7 +169,7 @@ function finishQuiz() {
         highScore = score;
     }
     quizDiv.style.visibility = "hidden";
-    finishText.innerText = `You have finished the Quiz. Your score is ${score} out of ${numberOfQuestions}. Your high score is ${highScore}. Go again?`;
+    finishText.innerText = `You have finished the quiz. Your score is ${score} out of ${numberOfQuestions}. Your highest score for this session is ${highScore}. Try again?`;
     goAgain.style.visibility = "visible"
 }
 
