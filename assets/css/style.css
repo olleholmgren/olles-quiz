@@ -7,13 +7,12 @@ body {
 .intro {
     text-align: center;
     box-sizing: border-box;
-    visibility: hidden;
 }
 
 .quizDiv {
     text-align: center;
     box-sizing: border-box;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .goAgain {
