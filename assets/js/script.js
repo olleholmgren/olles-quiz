@@ -9,12 +9,23 @@ let play = true;
 let numberOfQuestions = 0;
 let highScore = 0;
 
+const cityQuestionArea = document.getElementById("cityQuestion");
+const answer1 = document.getElementById("answer1")
+const answer2 = document.getElementById("answer2")
+const answer3 = document.getElementById("answer3")
+const answer4 = document.getElementById("answer4")
+
 const quizDiv = document.querySelector(".quizDiv")
 const goAgain = document.querySelector(".goAgain")
 const wipeArea = document.querySelector(".intro")
 
 const scoreElement = document.getElementById("liveScore") 
 const finishText = document.getElementById("finishText")
+
+
+
+
+
 
 function startQuiz() {
     quizDiv.style.visibility = "visible";
@@ -78,33 +89,67 @@ let cityQuestion = [
         a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
         correct: 3
     },
-]
-
-
-/**
- * Question and Answer Area
- */
-const cityQuestionArea = document.getElementById("cityQuestion");
-
-/** Answer alternatives */
-const answer1 = document.getElementById("answer1")
-const answer2 = document.getElementById("answer2")
-const answer3 = document.getElementById("answer3")
-const answer4 = document.getElementById("answer4")
+    {   id: 10,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 11,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 12,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 13,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 14,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 15,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 16,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 17,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 18,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
+    {   id: 19,
+        q: "Skopje",
+        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        correct: 3
+    },
 
 
 /**
  * Quiz loop 
  */
 function Quiz() {
-    console.log("Score: ", score)
     cityQuestionArea.innerText = cityQuestion[questionNumber].q;
-    /** Answer alternatives text */
     answer1.innerText = cityQuestion[questionNumber].a[0];
     answer2.innerText = cityQuestion[questionNumber].a[1];
     answer3.innerText = cityQuestion[questionNumber].a[2];
     answer4.innerText = cityQuestion[questionNumber].a[3];
-    /**  */
         
 }
 
@@ -152,4 +197,5 @@ function organiseGame() {
     Quiz()
  }
 }
+
 organiseGame();
