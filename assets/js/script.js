@@ -1,6 +1,7 @@
 /**
  * Game variables
  */
+
 let city = "";
 let questionNumber = 0;
 let score = 0;
@@ -14,13 +15,15 @@ const answer1 = document.getElementById("answer1")
 const answer2 = document.getElementById("answer2")
 const answer3 = document.getElementById("answer3")
 const answer4 = document.getElementById("answer4")
-
 const quizDiv = document.querySelector(".quizDiv")
 const goAgain = document.querySelector(".goAgain")
 const wipeArea = document.querySelector(".intro")
-
 const scoreElement = document.getElementById("liveScore") 
 const finishText = document.getElementById("finishText")
+
+/**
+ * Start the game
+ */
 
 function startQuiz() {
     quizDiv.style.visibility = "visible";
@@ -30,6 +33,7 @@ function startQuiz() {
 /**
  * Questions for the quiz
  */
+
 let cityQuestion = [
     {
         id: 0,
@@ -139,6 +143,7 @@ let cityQuestion = [
 /**
  * Quiz loop 
  */
+
 function Quiz() {
     cityQuestionArea.innerText = cityQuestion[questionNumber].q;
     answer1.innerText = cityQuestion[questionNumber].a[0];
@@ -151,6 +156,7 @@ function Quiz() {
 /**
  * Answer and score loop
  */
+
 function playerAnswer(number) {
     if (number === cityQuestion[questionNumber].correct) {
         score = score + 1;
@@ -164,6 +170,10 @@ function playerAnswer(number) {
     }
 }
 
+/**
+ * Finish the quiz
+ */
+
 function finishQuiz() {
     if (highScore < score) {
         highScore = score;
@@ -172,6 +182,10 @@ function finishQuiz() {
     finishText.innerText = `You have finished the quiz. Your score is ${score} out of ${numberOfQuestions}. Your highest score for this session is ${highScore}. \n Try again?`;
     goAgain.style.visibility = "visible"
 }
+
+/**
+ * Start new game
+ */
 
 function refreshPage() {
     city = "";
