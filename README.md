@@ -25,7 +25,7 @@ When the player enters the game they will be provided with a name of a capital c
 As the quiz game goes on, the player is able to keep track of their score at all time through the game.
 After the last question, the player will be notified at a blank page that the quiz has been finished.
 The total score will be presented as well as high score and an option to try the quiz all over again.
-If the player makes another try round and get better result - the high score will be updated with the highest score for the session.
+If the player makes another try round and get better result - the high score will be updated with the highest score for the session. hej
 
 ## Testing
 
@@ -38,6 +38,6 @@ Passed without any issues
 ![Mockup-image](/assets/images/quiz-mockup.png)
 
 ![Mockup-gameplay-image](/assets/images/gameplay-mockup.png)
-![intro-image](/)
-
+![intro-image](/assets)
+![html-test](/
 
