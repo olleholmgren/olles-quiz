@@ -52,7 +52,7 @@ let cityQuestion = [
         id: 2,
         q: "Copenhagen",
         a: ["Italy", "Ukraine", "Denmark", "Croatia"],
-        correct:  2
+        correct: 2
     },
     {   id: 3,
         q: "Vienna",
@@ -61,85 +61,85 @@ let cityQuestion = [
     },
     {   id: 4,
         q: "Amsterdam",
-        a: ["Wales", "Belgium", "Portugal", "Netherlands"],
+        a: ["Wales", "Belgium", "Czechia", "Netherlands"],
         correct: 3
     },
     {   id: 5,
         q: "Stockholm",
-        a: ["Wales", "Sweden", "Portugal", "Netherlands"],
+        a: ["Norway", "Sweden", "Denmark", "Finland"],
         correct: 1
     },
     {   id: 6,
         q: "Berlin",
-        a: ["Germany", "Belgium", "Portugal", "Netherlands"],
+        a: ["Germany", "Switzerland", "Austria", "Netherlands"],
         correct: 0
     },
     {   id: 7,
         q: "Minsk",
-        a: ["Wales", "Belgium", "Portugal", "Belarus"],
+        a: ["Moldovia", "Poland", "Latvia", "Belarus"],
         correct: 3
     },
     {   id: 8,
         q: "Athens",
-        a: ["Wales", "Belgium", "Greece", "Netherlands"],
+        a: ["Italy", "Serbia", "Greece", "Slovakia"],
         correct: 2
     },
     {   id: 9,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Riga",
+        a: ["Latvia", "Estonia", "Belarus", "Lithuania"],
+        correct: 0
     },
     {   id: 10,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Rome",
+        a: ["Greece", "Croatia", "Italy", "Austria"],
+        correct: 2
     },
     {   id: 11,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Lisbon",
+        a: ["Wales", "Portugal", "Spain", "Italy"],
+        correct: 1
     },
     {   id: 12,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Tirana",
+        a: ["Moldova", "Albania", "Ukraine", "Bulgaria"],
+        correct: 1
     },
     {   id: 13,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        q: "Vilnius",
+        a: ["Latvia", "Estonia", "Belarus", "Lithuania"],
         correct: 3
     },
     {   id: 14,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Dublin",
+        a: ["Wales", "Northern Ireland", "Ireland", "Scotland"],
+        correct: 2
     },
     {   id: 15,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Prague",
+        a: ["Czechia", "Romania", "France", "Hungary"],
+        correct: 0
     },
     {   id: 16,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Oslo",
+        a: ["Finland", "Norway", "Denmark", "Germany"],
+        correct: 1
     },
     {   id: 17,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Bratislava",
+        a: ["Greece", "Serbia", "Slovakia", "North Macedonia"],
+        correct: 2
     },
     {   id: 18,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
-        correct: 3
+        q: "Kyiv",
+        a: ["Ukraine", "Hungary", "Estonia", "Slovenia"],
+        correct: 0
     },
     {   id: 19,
-        q: "Skopje",
-        a: ["Wales", "Belgium", "Portugal", "North Macedonia"],
+        q: "Budapest",
+        a: ["Croatia", "Poland", "Romania", "Hungary"],
         correct: 3
     },
-
+]
 
 /**
  * Quiz loop 
