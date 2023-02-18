@@ -64,6 +64,9 @@ The quiz is 100% responsive and is fully playable on any device whether it is a 
 One great feature with this easy-to-use game is that when played on a smart phone, the player can play with only one hand and every answer button is 
 reachable for the right or left thumb, depending on which hand the player is playing with.
 
+![smart-phone-image](/assets/images/smart-phone.jpeg)
+
+
 Testing of the responsiveness has been done by opening the Google Dev Tools 'inspect' function in the Chrome browser, and then dragged the side list in order to see that it is responsive in all preferred screen sizes.
 
 ### JavaScript
@@ -104,6 +107,9 @@ Apart from that, most of the knowledge I have gotten through the Love Maths walk
 
 For future use, I can develop this quiz game and make all different sorts of improvements. Even be able to make it as 
 a fun learning tool for my own children.
+
+One thing that will be very interesting is to later come back to this project in maybe a year from now and see how I probably will 
+be able to creating it in a much more simple way and straight-forward way.
 
 
 
