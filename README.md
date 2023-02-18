@@ -56,9 +56,13 @@ In this way, the player is encouraged to challenge either themselves or with oth
 
 ![finish-msg-image](/assets/images/Finish-message.png)
 
+
 ## Testing
 
 The quiz is 100% responsive and is fully playable on any device whether it is a smart phone, tablet or a desktop computer.
+
+One great feature with this easy-to-use game is that when played on a smart phone, the player can play with only one hand and every answer button is 
+reachable for the right or left thumb, depending on which hand the player is playing with.
 
 Testing of the responsiveness has been done by opening the Google Dev Tools 'inspect' function in the Chrome browser, and then dragged the side list in order to see that it is responsive in all preferred screen sizes.
 
